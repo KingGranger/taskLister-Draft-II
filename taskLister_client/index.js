@@ -13,9 +13,9 @@ function showList(json){
   debugger;
 div = document.getElementById('List')
 let ul = document.createElement('ul')
-json.forEach(function(list){
+json.forEach(list => {
   link = `<li><a href="${list.url}">${list.name}</a></li>`
-  ul.innertHTML += link
+  ul.innerHTML += link
 })
 div.appendChild(ul)
 }
